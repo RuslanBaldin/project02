@@ -1,0 +1,92 @@
+.login-reg {
+    position: absolute;
+    top: -511px;
+    left: 162px;
+    width: 355px;
+    background: $color-white;
+    padding: 16px;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    transform: translateX(-950px);
+    @media (max-width: $tablet) {
+        top: -500px;
+        left: -52px;
+    }
+
+    &__title{
+        color: $color-black;
+        margin-bottom: 10px;
+    }
+    &__exit {
+        position: relative;
+        top: 10px;
+        right: -290px;
+    }
+}
+.footer__labelreg {
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 163px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+#footer__registrationreg:checked ~ .footer__reg {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 1s ease 0s;
+}
+.form{
+    .form__ili{
+        display: block;
+        text-align: center;
+        &::after{
+            content: "  ";
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background: $cart-color;
+            margin-left: 10px;
+            margin-bottom: 4px;
+        }
+        &::before{
+            content: "  ";
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background: $cart-color;
+            margin-right: 10px;
+            margin-bottom: 4px;
+        }
+    }
+    &__item-text{
+        color: $color-black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__item-link{
+        color: $color-btn;
+    }
+    &__label-reg-exit{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right:5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    &__fields--box{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+#footer__registrationreg{
+    display: none;
+}
+#footer__registrationreg-exit{
+    display: none;
+}

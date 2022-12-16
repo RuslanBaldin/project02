@@ -1,0 +1,110 @@
+.login {
+    position: absolute;
+    top: -350px;
+    left: -290px;
+    width: 355px;
+    background: $color-white;
+    padding: 16px;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    transform: translateX(-950px);
+
+    @media (max-width: $tablet) {
+        top: -500px;
+        left: -52px;
+    }
+
+
+    &__title{
+        color: $color-black;
+        margin-bottom: 10px;
+    }
+    &__exit {
+        position: relative;
+        top: 10px;
+        right: -290px;
+    }
+}
+.footer__label-login {
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 27px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    @media (max-width: $tablet) {
+        bottom: 41px;
+        left: 12px;
+    }
+}
+#footer__registrationlogin:checked ~ .footer__login {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 1s ease 0s;
+}
+/* #footer__label-reg-link:checked ~ .footer__reg {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 1s ease 0s;
+} */
+.form{
+    .form__ili{
+        display: block;
+        text-align: center;
+        &::after{
+            content: "  ";
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background: $cart-color;
+            margin-left: 10px;
+            margin-bottom: 4px;
+        }
+        &::before{
+            content: "  ";
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background: $cart-color;
+            margin-right: 10px;
+            margin-bottom: 4px;
+        }
+    }
+    &__item-text{
+        color: $color-black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__item-link{
+        color: $color-btn;
+    }
+    &__label-reg{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right:15px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    &__label-reg-link{
+        display: block;
+        position: absolute;
+        top: 284px;
+        right: 19px;
+        width: 154px;
+        height: 17px;
+        cursor: pointer;
+        z-index: 2;
+    }
+}
+#footer__registrationlogin{
+    display: none;
+}
+#footer__registration-reg{
+    display: none;
+}
+
+

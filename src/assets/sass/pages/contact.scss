@@ -1,0 +1,211 @@
+.contact-pages {
+
+    .contact {
+        &__map {
+            position: relative;
+            margin-bottom: -80px;
+
+            @media (max-width: $tablet) {
+                margin-bottom: 0px;
+            }
+        }
+
+        &__racers {
+            position: absolute;
+            top: 150px;
+            left: 80px;
+            width: 355px;
+            background: $color-white;
+            padding: 16px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.04);
+
+            @media (max-width: $tablet) {
+                width: 100%;
+                top: 100px;
+                left: 0px;
+            }
+        }
+
+        &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+
+        &__title {
+            margin-bottom: 8px;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+
+        &__title-mobile {
+            display: none;
+
+            @media (max-width: $tablet) {
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 22px;
+                display: block;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+
+        &__info {
+            margin: 20px auto;
+        }
+
+        &__list {
+            padding-left: 40px;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            &--number {
+                background: url(../dist/img/contact/call.svg) left no-repeat;
+            }
+
+            &--email {
+                background: url(../dist/img/contact/alternate.svg) left no-repeat;
+            }
+
+            &--adres {
+                background: url(../dist/img/contact/map.svg) left no-repeat;
+            }
+        }
+
+        &__social {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+
+            :hover path {
+                fill: $color-btn;
+            }
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+
+        &__btn {
+            width: 100%;
+        }
+
+        &__label {
+            display: block;
+            position: absolute;
+            bottom: 19px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        #contact__check {
+            display: none;
+        }
+
+        #contact__check:checked~.contact__racers2 {
+            display: block;
+            transform: translateX(0px);
+            opacity: 1;
+            transition: all 1s ease 0s;
+        }
+
+        &__racers2 {
+            position: absolute;
+            top: 0px;
+            left: 450px;
+            width: 355px;
+            background: $color-white;
+            padding: 16px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.04);
+            transform: translateX(-950px);
+            opacity: 0;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+                top: 0px;
+                left: 0px;
+                display: none;
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        &__text {
+            margin-bottom: 20px;
+        }
+
+        &__exit {
+            position: relative;
+            top: -68px;
+            right: -307px;
+        }
+
+        #form__check {
+            display: none;
+        }
+
+    }
+}
+
+/* ===========  form  =========== */
+.form {
+    &__input {
+        width: 100%;
+        margin: 10px auto;
+        /*             z-index: 1; */
+    }
+
+    &__btn {
+        width: 100%;
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    &__label {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 2;
+
+        @media (max-width: $tablet) {
+            &::after {
+                content: " ";
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: url(../dist/img/exit.svg) 0px 0px no-repeat;
+            }
+        }
+
+        #form__check:checked~.contact__racers2 {
+            display: block;
+        }
+    }
+
+    /* ===========  form end  =========== */
+
+}

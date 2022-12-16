@@ -1,0 +1,113 @@
+body,html{
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    color: $color-body; 
+    font-family: $sub-fonts;
+}
+
+.wrapper{
+    overflow: hidden;
+    padding: 10px;
+
+        position: relative;
+        &__img-bg1{
+            position: absolute;
+            top: 944px;
+            left: 0px;
+            z-index: -1;
+            max-width: 390px;
+            max-height: 645px;
+        }
+        &__img-bg2{
+            position: absolute;
+            top: 1589px;
+            left: 142px;
+            z-index: -1;
+            max-width: 700px;
+        }
+        &__img-bg3{
+            position: absolute;
+            top: 1730px;
+            left: 379px;
+            z-index: -1;
+            max-width: 400px;
+            max-height: 645px;
+        }
+
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: $link-fonts;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    text-transform: capitalize;
+    @media (max-width: $tablet) {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: -0.41px;
+    color: $color-btn;
+    @media (max-width: $tablet) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    @media (max-width: $tablet) {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $main-fonts;
+    letter-spacing: -0.005em;
+    color: $color-icon;
+    @media (max-width: $tablet) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+.text{
+    font-size: 24px;
+    line-height: 38px;
+    @media (max-width: $tablet) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+.icon-text{
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    color: $color-icon;
+}
+.input{
+    min-width: 270px;
+    height: 44px;
+    border: 0.8px solid #D9D9D9;
+    border-radius: 2px;
+    padding-left: 10px;
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
+}

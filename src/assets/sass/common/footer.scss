@@ -1,0 +1,151 @@
+
+
+    /* section footer */
+    .footer{
+        &__container{
+            font-size: 16px;
+            font-family: $main-fonts;
+            line-height: 24px;
+            color: $footer-color;
+            margin: 100px auto 25px;
+             position: relative;
+             @media (max-width: $tablet) {
+                margin: 50px auto 25px;
+            }
+        }
+        &__content{
+            display: flex;
+            gap: 50px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid $cart-color;
+            margin-bottom: 10px;
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+        &__logo{
+            width: 110px;
+        }
+        &__icon{
+            display: flex;
+            gap: 25px;
+            transition: all 0.3s ease 0s;
+            :hover path{
+                fill:$color-btn;
+            }
+        }
+        &__description{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 500px;
+            position: relative;
+        }
+    
+        &__link-box-title{
+            font-weight: 600;
+            line-height: 21px;
+            color: $color-icon;
+            margin-bottom: 16px;
+        }
+        &__link-box-list{
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+        &__link-box-link{
+            color: $footer-color;
+            transition: all 0.3s ease 0s;
+            &:hover{
+                color: $color-btn;
+            }
+        }
+        &__nav-registration{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__registration{
+            display: flex;
+            text-transform: uppercase;
+            gap: 50px;
+            margin-bottom: 10px;
+        }
+        &__registration-list{
+            display: flex;
+            padding: 20px;
+            transition: all 0.3s ease 0s;
+            border: 3px dashed  transparent;
+                &:hover{
+                border: 3px dashed $color-btn;
+                border-radius: 4px;
+            }
+            @media (max-width: $tablet) {
+                border: 3px dashed $color-btn;
+                border-radius: 4px;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+        }
+        &__registration-link{
+            color: $color-btn;
+            display: block;
+        }
+        &__copyright{
+            text-align: center;
+            padding-top: 65px;
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+        /* section mobile-content */
+        &__mobile-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            line-height: 20px;
+            display: none;
+                @media (max-width: $tablet) {
+                display: flex;
+            }
+        }
+        &__title-mobile{
+            margin: 10px auto 20px;
+            text-align: center;
+        }
+        &__title-red-mobile{
+            color: $color-btn;
+        }
+        &__title-text-mobile{
+            color: $color-black;
+        }
+        &__nav-mobile{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        &__link-mobile{
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $color-black;
+        }
+        &__icon-mobile{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            display: none;
+            @media (max-width: $tablet) {
+                display: flex;
+                margin-top: 50px;
+            }
+        }
+        /* section mobile-content end*/
+    }
+    /* section footer end*/
